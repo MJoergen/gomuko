@@ -52,7 +52,7 @@ class CSquare
     uint32_t  m_row;
 }; /* end of class CSquare */
 
-typedef enum class
+typedef enum
 {
   eWon = 0,
   eLost,

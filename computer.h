@@ -74,7 +74,7 @@
 #define DEFAULT_OUTPUT_THRESHOLD_LEVEL  0 
 #define SLEEP_COUNT                     0
 
-typedef enum class
+typedef enum
 {
   lineBetter,
   lineWorse,

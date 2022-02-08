@@ -422,7 +422,7 @@ void CComputerPlayer<traits>::PrintLine(t_lineType lineType) const
     if (!m_bPrintLine)
         return;
 
-    char moveTimeStr[5];
+    char moveTimeStr[15];
     {
         uint32_t moveTimeSecs = time(0) - m_StartTime;
         uint32_t moveTimeMins = moveTimeSecs/60;
