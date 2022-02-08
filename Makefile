@@ -5,8 +5,8 @@ sources += CRand.cc
 sources += CPiece.cc
 sources += CMove.cc
 
-DEFINES  = -Wall -O3
-#DEFINES += -g -DENABLE_TRACE
+DEFINES  = -Wall -O3 -g
+#DEFINES += -DENABLE_TRACE
 CC = g++
 
 objects = $(sources:.cc=.o)
