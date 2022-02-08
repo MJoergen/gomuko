@@ -5,12 +5,12 @@ sources += CRand.cc
 sources += CPiece.cc
 sources += CMove.cc
 
+DEFINES  = -Wall -O3
+#DEFINES += -g -DENABLE_TRACE
+CC = g++
+
 objects = $(sources:.cc=.o)
 depends = $(sources:.cc=.d)
-CC = g++ -std=c++11
-DEFINES  = -Wall -O3 -g
-
-DEFINES += -DENABLE_TRACE
 
 gomuko: $(objects) Makefile
 		$(CC) $(DEFINES) -o $@ $(objects) -lstdc++
